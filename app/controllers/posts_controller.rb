@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = Post.create!(post_params)
+    post = Post.create(post_params)
     redirect_to post, notice: "投稿しました"
     # ↑投稿詳細ページにリダイレクトさせることができる
   end
